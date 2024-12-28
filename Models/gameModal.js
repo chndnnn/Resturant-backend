@@ -9,7 +9,7 @@ const gameSchema = new mongoose.Schema({
       },
       score: {
         type: Number,
-        required: true,
+        required: true
       }
     })
 
