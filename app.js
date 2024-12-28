@@ -5,7 +5,11 @@ import cors from "cors" ;
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://resturantfrontend.netlify.app',
+    origin: [
+    'https://resturantfrontend.netlify.app',
+    'https://memorychan.netlify.app',
+    'http://localhost:3000'
+  ],
   credentials: true              
 }));
 
